@@ -1,5 +1,5 @@
 
-export default function customMethodsClient (options = {}) {
+module.exports = function customMethodsClient (options = {}) {
   let methods = options.methods
   if (!methods) {
     throw new Error('should be called with an object containing `methods: { serviceName: ["methodName"] }`')
